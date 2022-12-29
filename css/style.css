@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* 
+    #612B94
+    #E0C396
+    #B17FE0
+    #41E078
+    #699478
+*/
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1:#612B94;
+    --color2:#E0C396;
+    --color3:#B17FE0;
+    --color4:#41E078;
+    --color5:#699478;
+}
+
+.hide {
+    display: none !important;
+}
+
+body {
+    background-color: var(--color5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    background-color: var(--color1);
+    color: white;
+    padding: 10px;
+    max-width: 340px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.595);
+}
+
+h1 {
+    margin: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.input-container input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #ccc;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.595);
+}
+
+.botao {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: #41E078;
+    color: white;
+    font-weight: bolder;
+    border: none !important;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.595);
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.botao:hover {
+    opacity: 0.8;
+}
+
+.modal {
+    background-color: rgba(128, 128, 128, 0.411);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container {
+    background-color: var(--color1);
+    color: white;
+    padding: 10px;
+    max-width: 340px;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.595);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.valorapli {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.valorapli p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+#destaque {
+    font-weight: bolder;
+    background-color: #B17FE0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.container button {
+    margin-top: 10px;
+}
