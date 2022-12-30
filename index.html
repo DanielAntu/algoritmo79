@@ -12,11 +12,11 @@
     <section class="input-container">
         <h1>Calculadora de Rendimentos da Aplicação</h1>
         <form class="input-rend">
-            <input type="text" name="val" id="val" placeholder="Valor da Aplicação Exemplo: 2130,90">
+            <input type="text" name="val" id="val" placeholder="Valor da Aplicação Exemplo: 2130,90" required>
             <input type="text" name="tax" id="tax" placeholder="Valor da taxa 
-Exemplo: 2,90">
-            <input type="number" name="mes" id="mes" placeholder="Número de meses" min="1" max="12">
-            <input type="submit" value="Calcular" id="calcular" class="botao">
+Exemplo: 2,90" required>
+            <input type="number" name="mes" id="mes" placeholder="Número de meses" min="1" required>
+            <input type="submit" value="Calcular" id="calcular" class="botao" disabled>
         </form>
     </section>
 
@@ -24,10 +24,10 @@ Exemplo: 2,90">
         <div class="container">
             <h1>Acumulado de sua Aplicação</h1>
             <div class="valorapli">
-                <p>Valor: <span id="valora">R$2000,00</span></p>
-                <p>Taxa: <span id="taxa">R$9,90</span></p>
-                <p>Numero de meses: <span id="meses">4 meses</span></p>
-                <p id="destaque">Valor Acumulado: <span id="valAcu">R$2150,00</span></p>
+                <p>Valor: <span id="valora"></span></p>
+                <p>Taxa: <span id="taxa"></span></p>
+                <p>Numero de meses: <span id="meses"></span></p>
+                <p id="destaque">Valor Acumulado: <span id="valAcu"></span></p>
             </div>
             <button id="closebtn" class="botao">Voltar</button>
         </div>
